@@ -25,5 +25,11 @@ public class RubberArray {
         System.out.println("]");
         System.out.println();
     }
-
+//
+    public int size(){
+        return array.length;
+    }
+    public  int sumOfvalue(){
+        int sum=0;
+    }
 }

@@ -11,11 +11,14 @@ public class Lesson_18 {
 
       //  int var2=25;
       //  array[1]=25;
-        RubberArray rb=new RubberArray();
-        rb.printArray();
-        rb.add(11);
-        rb.add(22);
-        rb.add(33);
-        rb.printArray();
+        RubberArray ra=new RubberArray();
+        ra.printArray();
+        ra.add(11);
+        ra.add(22);
+        ra.add(33);
+        ra.printArray();
+      //
+        int raSize=ra.size();
+        System.out.println(""+raSize+"");
     }
 }
