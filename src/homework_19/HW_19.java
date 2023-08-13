@@ -1,12 +1,14 @@
-package homework_17;
+package homework_19;
 
 import lesson_17.Dog;
 
 import java.util.Random;
 
-public class HW_17 {
+public class HW_19 {
     public static void main(String[] args) {
         Random random = new Random();
+        Dog dog =new homework_19.Dog();
+        dog.whoAmI();
 
         int[] newBarriers = new int[10];
 
@@ -17,16 +19,7 @@ public class HW_17 {
         Dog testDog = new Dog("Test Dog", random.nextInt(101));
         testDog.whoAmI();
 
-//        int count = 0;
-//
-//        for (int barrier : newBarriers) {
-//            System.out.println("Попытка перепрыгнуть барьер " + barrier);
-//            if (testDog.getBarrier(barrier)) {
-//                count++;
-//            }
-//            System.out.println("End attempt \n");
-//        }
-//        System.out.println("End for loop");
+
         int sucBarrierForDog = startTrainingForOneDog(testDog, newBarriers);
 
 
@@ -56,7 +49,7 @@ public class HW_17 {
 
         for (int barrier : barriers) {
             System.out.println("Попытка перепрыгнуть барьер " + barrier);
-            if (dog.getBarrier(barrier)) {
+            if (dog.Barrier(barrier)) {
                 count++;
             }
             System.out.println("End attempt \n");

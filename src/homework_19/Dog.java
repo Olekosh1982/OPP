@@ -1,12 +1,6 @@
-package homework_17;
+package homework_19;
 
 public class Dog {
-    //Task 1 Повторить код класса Dog, написанного на уроке.
-    //Создать массив из 10 препятствий.
-    //Попросить объект класса собака перепрыгнуть все препятствия в массиве. Написать класс собака
-    //Собака должна иметь имя, высоту прыжка
-    //Должна уметь прыгать и должна уметь тренироваться. За каждую тренировку высота прыжка увеличивается на 10 сантиметров
-    //Максимальная высота, которую может натренировать собака не может быть больше, чем 2раза высоту первоначального прыжка
 
     String name;
     int jumpHeight;
@@ -14,7 +8,7 @@ public class Dog {
     int jumpUpgrade;
 
 
-    public Dog (String name, int jumpHeight){
+    public Dog(String name, int jumpHeight){
         this.name = name;
         this.jumpHeight = jumpHeight;
         maxJump = jumpHeight*2;
