@@ -1,7 +1,5 @@
 package homework_17;
 
-import lesson_17.Dog;
-
 import java.util.Random;
 
 public class HW_17 {
@@ -63,6 +61,6 @@ public class HW_17 {
         }
 
         return count;
+
     }
 }
-

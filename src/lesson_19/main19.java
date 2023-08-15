@@ -2,6 +2,7 @@ package lesson_19;
 
 public class main19 {
     public static void main(String[] args) {
+
         Cat cat = new Cat();
         cat.whoAmI();
 
