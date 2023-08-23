@@ -13,9 +13,9 @@ public abstract class Pizza {
     protected abstract  void prepare();
 
     private void  bake(){
-        System.out.println("baking"+type);
+        System.out.println("Baking"+type);
     }
     private void  pack(){
-        System.out.println("packing"+type);
+        System.out.println("Packing"+type);
     }
 }
