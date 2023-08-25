@@ -22,7 +22,6 @@ public class Tree extends Plant{
         return TREE_GROW_PER_SEASON;
     }
 
-
-
 }
+
 

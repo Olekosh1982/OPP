@@ -49,11 +49,12 @@ public class Garden {
          tree_grow_per_season = 5
 
      4. метод growPlants должен производить действия над массивом обьектов типа Plant
-
      */
-    public static void growPlants(Plant[]plants,int years){
-        System.out.println("Growing plants for"+years+"years");
-        for(int i=0;i<years;i++) {
+
+    public static void growPlants( Plant[]plants, int years){
+        System.out.println("Growing plants for " + years + " years");
+
+        for( int i = 0; i < years; i++) {
             for (Plant plant : plants) {
                 plant.doSpring();
                 plant.doSummer();
@@ -61,14 +62,23 @@ public class Garden {
                 plant.doWinter();
             }
         }
-        for (Plant plant : plants){
-            System.out.println(plant.getName()+"has heidht:"+plant.getHeight()+"and is"+plant.getAge()+"years old");
+
+        for( Plant plant : plants){
+            System.out.println(plant.getName() + " has height: "+plant.getHeight()+" and is "
+                    + plant.getAge() + " years old");
         }
-    }
-    public static void main(String[]args){
-        Plant tree=new Tree("Pine tree",100,1);
-        Plant flower1=new Tree("Rose",20,1);
-        Plant flower=new Tree("Tulip",0,1);
 
     }
+
+    public static void main(String[] args) {
+        Plant tree = new Tree("Pine tree",100,1);
+        Plant flower = new Flower("Tulip",0,1);
+        Plant flower1 = new Flower("Rose",20,1);
+
+        Plant[] plants = {flower,flower1,tree};
+        int years = 2;
+
+        growPlants(plants,years);
+    }
 }
+
