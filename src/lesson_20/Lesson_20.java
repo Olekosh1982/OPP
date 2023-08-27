@@ -9,7 +9,7 @@ public class Lesson_20 {
         Car car1 = new Car("Skoda", 110);
         Car car2 = new Car("Seat", 120);
 
-        // Car.numberOfCars = 13; // !!! Статические поля тоже нужно закрывать от прямого доступа. Инкапсулировать
+        // lesson_29.Car.numberOfCars = 13; // !!! Статические поля тоже нужно закрывать от прямого доступа. Инкапсулировать
         System.out.println("Всего создано машин: " + Car.getNumberOfCars());
         Car.showStaticInfo();
         // car1.showStaticInfo(); обращение к статик методу возможно от имени экземпляра класса.

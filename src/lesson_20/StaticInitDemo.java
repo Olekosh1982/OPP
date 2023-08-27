@@ -4,7 +4,7 @@ public class StaticInitDemo {
 
     private String[] strings;
     //    static int sizeCars = 4;
-    private static Car[] cars; // = new Car[sizeCars];
+    private static Car[] cars; // = new lesson_29.Car[sizeCars];
 
     static {
         cars = new Car[3];
