@@ -20,10 +20,24 @@ public class Application {
    public static void main(String[] args) {
        Movable kangaroo=new Kangaroo();
        System.out.println(kangaroo);
+       kangaroo.move();
+       kangaroo.stop();
 
        Car passengerCar = new PassengerCar("XC90","Volvo",2020,"Red");
+       Movable passengerCarMov= (Movable) new PassengerCar("car","Mercedes",2021,"red");
+       passengerCarMov.move();
+       passengerCarMov.stop();
+       Car truckCar=new Truck("Truck","MAN",2020,"black",5000,100);
+       Truck truck=new Truck("SuperTruck","Volvo",2019,"black-yellow",5000,500);
+       System.out.println(truck);
 
-       System.out.println(passengerCar.getColour());
-       System.out.println(passengerCar);
+       truck.move();
+       truck.stop();
+       truck.load(2000);
+       truck.move();
+       truck.setCurrentFuel(200);
+
+
+
    }
 }
