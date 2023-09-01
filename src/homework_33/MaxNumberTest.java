@@ -1,8 +1,9 @@
-package lesson_32.lunit_testing;
+package homework_33;
 
+import lesson_32.lunit_testing.MaxNumber;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class MaxNumberTest {
     /*
@@ -16,7 +17,7 @@ class MaxNumberTest {
 
      */
 
-    private MaxNumber m = new MaxNumber();
+    private lesson_32.lunit_testing.MaxNumber m = new MaxNumber();
 
 
     @Test
@@ -52,15 +53,15 @@ class MaxNumberTest {
     @Test
 
     public void firstMaxElt_middle_test(){
-        int[] actual = {9,4,7,3,1,5,2};
+        int[] actual = {10,9,4,7,3,1,5,2};
 
-        assertEquals(9,m.findMax(actual));
+        assertEquals(10,m.findMax(actual));
     }
     @Test
     public void lastMaxElt_middle_test(){
-        int[] actual = {2,4,7,5,3,1,9};
+        int[] actual = {2,4,7,5,3,1,9,10};
 
-        assertEquals(9,m.findMax(actual));
+        assertEquals(10,m.findMax(actual));
     }
 
 }
