@@ -1,49 +1,35 @@
 package lesson_33.animals;
 
 public class Animal {
+
     private String name;
     private int weight;
-    private String color;
+    private String colour;
 
-    public Animal(String name, int weight, String color) {
+    public Animal(String name, int weight, String colour) {
         this.name = name;
         this.weight = weight;
-        this.color = color;
+        this.colour = colour;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public String getColour() {
+        return colour;
     }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
-    }
-    public int compareTo(Animal p) {
-        int playerName=getName().compareTo(p.getName());
-        return  playerName==0?Integer.compare(getName(),p.getName()):playerName);}
 
     @Override
     public String toString() {
         return "Animal{" +
                 "name='" + name + '\'' +
                 ", weight=" + weight +
-                ", color='" + color + '\'' +
+                ", colour='" + colour + '\'' +
                 '}';
     }
 }
