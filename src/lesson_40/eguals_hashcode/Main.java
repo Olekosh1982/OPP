@@ -1,7 +1,7 @@
 package lesson_40.eguals_hashcode;
 
+
 public class Main {
-}public class Main {
 
     public static void main(String[] args) {
 
