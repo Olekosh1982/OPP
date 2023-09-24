@@ -1,8 +1,6 @@
-package lesson_47;
+package lesson_48;
 
-import java.util.Scanner;
-
-public class Main {
+public class Main_exception_finally {
     /*
     Exceptions ( исключения)
 
@@ -141,6 +139,66 @@ public class Main {
         }
 
         System.out.println("we are out of the try-catch-finally");
+        /*
+        1.finally-
+        2.finally-
+        3.
+         */
+        System.out.println(example());
+        for(int i=0;i<3;i++){
+            example1(i);
+            System.out.println();
+        }
 
     }
+    public static int example(){
+        try {
+            return 1;
+        }
+        finally {
+            System.out.println("Finally runs even when return is present");
+        }
+    }
+    public static void example1( int num){
+        int t;
+        int[] ints=new int[2];
+        System.out.println("received "+num);
+       try {
+           switch (num) {
+               case 0:
+                   t = 20 / num;//деление на ноль
+                   break;
+               case 1:
+                   ints[10] = 100;//неправильный индекс
+                   break;
+               case 2:
+                   return;//возврат из блока try
+
+           }
+       }
+       catch (ArithmeticException e){
+           System.out.println("Do not divide by zero!");
+           return;
+       }
+       catch (ArrayIndexOutOfBoundsException e){
+           System.out.println("No such index is found");
+
+       }
+       finally {
+           System.out.println("Finally always executers");
+       }
+       checkCandidates(9,20);
+    }
+    /*
+    throw-бросать исключение
+
+     */
+    public static void checkCandidates(int age,int weight){
+        if(age<10 && weight<40){
+            throw  new ArithmeticException("Sorry, you are not good for our section");
+        }else {
+            System.out.println("Welcome");
+        }
+    }
+
 }

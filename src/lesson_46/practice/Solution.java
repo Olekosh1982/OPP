@@ -17,8 +17,8 @@ import java.util.Deque;
 
          */
         public boolean areBracketsCorrect(char[] brackets) {
-            if (brackets.length % 2 != 0)
-                return false;
+           if (brackets.length % 2 != 0)
+               return false;
 
             Deque<Character> deque = new ArrayDeque<>();
             //{}([]{()})          deque:
@@ -42,8 +42,8 @@ import java.util.Deque;
                 }
             }
 
-
-            return false;
+              //  return true;
+            return deque.size()==0;
         }
     }
 
