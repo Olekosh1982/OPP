@@ -9,6 +9,6 @@ public class NonIntegerException extends Exception{
         this.d=d;
     }
     public String toString(){
-        return "res of"+n+"/"+d+"="+n/d;
+        return "result of "+ n + "/" + d + "is not integer";
     }
 }
